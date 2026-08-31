@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dcdcdc; /* Fundo cinza exato da página */
+  color: #222;
+  text-align: center;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.header-top {
+  background-color: #ffe6d5; /* Fundo bege/salmão */
+  padding: 15px 0 0 0;
+  border: 2px solid #000080; /* Moldura azul escura */
+}
+
+.header-top h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #008000; /* Texto do título em verde */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #80c8f8; /* Fundo azul claro */
+  padding: 8px 0;
+  border-top: 2px solid #000080; /* Linha azul divisória */
+}
+
+.nav-menu a {
+  color: #800000; /* Texto dos links em vinho */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+
+h2.section-title {
+  color: #0b2e59;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+
+.texto-intro {
+  font-family: sans-serif;
+  font-size: 20pt;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #111;
+}
+
+
+.grid-livros {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+.livro-card {
+  width: 180px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.imagem-capa {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.midia-box {
+  margin: 15px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.iframe-media {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+
+
+.contatos-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.titulo-contatos {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.tabela-contatos {
+  border-collapse: collapse;
+  border: 2px dashed #ff0000;
+  margin-bottom: 30px;
+  background-color: #dcdcdc;
+}
+
+.tabela-contatos th,
+.tabela-contatos td {
+  border: 1px dashed #ff0000;
+  padding: 8px 25px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.tabela-contatos th {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.tabela-contatos td {
+  color: #333;
+}
+
+
+.bloco-amarelo {
+  background-color: #ffff00;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.titulo-consulta {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.lista-consulta {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-consulta li {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+}
+
+.label-link {
+  font-weight: normal;
+  margin-right: 10px;
+  min-width: 120px;
+}
+
+.lista-consulta a {
+  color: #800000;
+  text-decoration: underline;
+}
+
+
+.faixa-rodape {
+  background-color: #ffe6d5;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.box-logo {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-rodape {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+.texto-rodape {
+  text-align: center;
+}
+
+.mensagem-semestre,
+.fonte-info {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 15pt;
+  color: #000;
+  margin-bottom: 4px;
+}
