@@ -1,0 +1,32 @@
+.caixa{
+  background-color: gray;
+  width: 400px;
+  padding: 20px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.caixa input{
+  width: 90%;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.caixa button{
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.caixa h2{
+  color: white;
+  margin-top: 30px;
+}
+
+.correto{
+  background-color: green;
+}
+
+.errado{
+  background-color: red;
+}
